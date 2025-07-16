@@ -1,12 +1,12 @@
 import UserContext from "./UserContext";
+import { useContext } from "react";
 
-export default function UserDetails({ userData }) {
+export default function UserDetails() {
+  const userData = useContext(UserContext);
   return (
-    <UserContext.Provider value={userData}>
-      <div>
-        <p>Name: {userData.name}</p>
-        <p>Email: {userData.email}</p>
-      </div>
-    </UserContext.Provider>
+    <div>
+      <p>Name: {userData.name}</p>
+      <p>Email: {userData.email}</p>
+    </div>
   );
 }
