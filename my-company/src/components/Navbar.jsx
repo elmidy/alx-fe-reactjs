@@ -22,6 +22,8 @@ function Navbar() {
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-around",
+        backgroundColor: "#f3f4f6",
+        color: "#1f2937",
       }}
     >
       <ul className="nav-links">
