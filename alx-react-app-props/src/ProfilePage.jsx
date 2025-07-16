@@ -4,7 +4,7 @@ import { useContext } from "react";
 
 function ProfilePage() {
   const userData = useContext(UserContext);
-  return <UserDetails value={userData} />;
+  return <UserInfo value={userData} />;
 }
 
 export default ProfilePage;
