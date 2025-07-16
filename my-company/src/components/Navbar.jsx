@@ -10,7 +10,20 @@ function Navbar() {
   ];
 
   return (
-    <div className="sidebar">
+    <div
+      className="sidebar"
+      style={{
+        position: "fixed",
+        top: "0",
+        left: "0",
+        width: "100px",
+        height: "100vh",
+        padding: "0 20px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-around",
+      }}
+    >
       <ul className="nav-links">
         {navItems.map((item) => (
           <li key={item.path}>
