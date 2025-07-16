@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer>
+    <footer style={{ color: "yellow" }}>
       <p>&#169; 2023 City Lovers</p>
     </footer>
   );
